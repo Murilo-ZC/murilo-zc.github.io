@@ -134,7 +134,8 @@ h2 {
     margin: 4em auto;
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    background-size: cover;        
+    background-size: cover; 
+    
 }
 
 .profile-bio {
@@ -186,4 +187,26 @@ h2 {
 .profile-social-links li a:hover img {
     opacity: 1;
     transform: scale(1.1, 1.1);
+}
+
+@media only screen and (max-device-width: 900px) {
+    .profile-bio {
+        width: 600px;
+        font-size: 25px;
+        padding: ;
+    }
+    
+    .profile-bio p {
+        margin: 2rem 2.5rem;
+        text-align: justify;
+    }
+
+    .profile-card h2 {
+        font-size: 20px;
+    }
+
+    .profile-social-links li img{
+        min-width: 50px;
+        min-height: 50px;
+    }
 }
