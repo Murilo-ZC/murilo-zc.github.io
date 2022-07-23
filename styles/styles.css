@@ -206,7 +206,12 @@ h2 {
     }
 
     .profile-social-links li img{
-        min-width: 50px;
-        min-height: 50px;
+        min-width: 60px;
+        min-height: 60px;
+    }
+
+    .profile-social-links li {
+        padding-left: 30px;
+        padding-right: 30px;
     }
 }
