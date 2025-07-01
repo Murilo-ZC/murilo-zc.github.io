@@ -23,8 +23,8 @@ jobs:
     - name: Install dependencies
       run: npm ci
       
-    - name: Build project
-      run: npx expo export --platform web
+    - name: Clear cache and build project
+      run: npx expo export --platform web --clear
       
     - name: Create .nojekyll file
       run: touch dist/.nojekyll

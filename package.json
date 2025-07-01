@@ -7,9 +7,9 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "build": "npx expo export --platform web",
-    "build:web": "npx expo export --platform web",
-    "deploy": "npx expo export --platform web && touch dist/.nojekyll && cp CNAME dist/",
+    "build": "npx expo export --platform web --clear",
+    "build:web": "npx expo export --platform web --clear",
+    "deploy": "npx expo export --platform web --clear && touch dist/.nojekyll && cp CNAME dist/",
     "deploy:local": "bash scripts/deploy.sh",
     "serve": "npx serve dist",
     "preview": "npm run build:web && npm run serve"

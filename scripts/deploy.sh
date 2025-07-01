@@ -11,9 +11,9 @@ rm -rf out/
 echo "📦 Instalando dependências..."
 npm ci
 
-# Build do projeto
-echo "�� Gerando build..."
-npx expo export --platform web
+# Build do projeto com cache limpo
+echo "🔨 Gerando build..."
+npx expo export --platform web --clear
 
 # Criar arquivo .nojekyll
 echo "📝 Criando arquivo .nojekyll..."
