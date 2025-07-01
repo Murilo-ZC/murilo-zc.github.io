@@ -24,10 +24,13 @@ jobs:
       run: npm ci
       
     - name: Build project
-      run: npm run build:web
+      run: npx expo export --platform web
       
     - name: Create .nojekyll file
       run: touch dist/.nojekyll
+      
+    - name: Copy CNAME
+      run: cp CNAME dist/
       
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3

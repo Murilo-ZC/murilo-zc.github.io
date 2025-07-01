@@ -12,8 +12,8 @@ echo "📦 Instalando dependências..."
 npm ci
 
 # Build do projeto
-echo "🔨 Gerando build..."
-npm run build:web
+echo "�� Gerando build..."
+npx expo export --platform web
 
 # Criar arquivo .nojekyll
 echo "📝 Criando arquivo .nojekyll..."
