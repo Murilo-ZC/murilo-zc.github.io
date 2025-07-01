@@ -11,16 +11,10 @@
 
 import { Stack } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
-import { Head } from 'expo-router';
 
 export default function RootLayout() {
   return (
     <>
-      <Head>
-        <title>Murilo ZC - Portfolio</title>
-        <meta name="description" content="Portfolio pessoal de Murilo Zanini de Carvalho - Desenvolvedor Full Stack" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </Head>
       <StatusBar style="light" backgroundColor="#1E3A8A" />
       <Stack 
         screenOptions={{
