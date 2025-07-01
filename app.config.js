@@ -27,7 +27,12 @@ module.exports = {
       favicon: "./assets/favicon.png",
       bundler: "metro",
       output: "static",
-      baseUrl: "/"
+      baseUrl: "/",
+      build: {
+        babel: {
+          include: ["@expo/vector-icons"]
+        }
+      }
     },
     plugins: [
       "expo-router"
